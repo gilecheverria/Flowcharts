@@ -5,7 +5,7 @@
 flowchart TD
     A([Start]):::round --> B[/Enter number/]:::output
     B --> C[\num\]:::input
-    C --> D{num % 2 == 0}:::decision
+    C --> D{{num % 2 == 0}}:::decision
     D --> |Yes| E(result = even):::action
     D --> |No| F(result = odd):::action
     E --> G[/result/]:::output
